@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+*.txt
+*.md
+ignore/
+.idea
+dist/
+out
+gen
+packade-lock.json
+\!npm commands!.txt
+node_modules/
