@@ -8,7 +8,7 @@ const imageWebpackLoader = require('./webpack/image-webpack-loader');
 const htmlWebpackPlugin = require('./webpack/html-webpack-plugin');
 const miniCssExtractPlugin = require('./webpack/mini-css-extract-plugin');
 const cleanWebpackPlugin = require('./webpack/clean-webpack-plugin');
-const webpackProvidePluginJquery = require('./webpack/webpackProvidePlugin-jquery');
+const webpackProvidePluginJquery = require('./webpack/webpack-provide-plugin-jquery');
 const optimizeCssAssetsPlugin = require('./webpack/optimize-css-assets-webpack-plugin');
 
 let config = merge([
