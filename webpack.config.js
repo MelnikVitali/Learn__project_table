@@ -1,6 +1,7 @@
 const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const merge = require('webpack-merge');
+
 const babelLoader = require('./webpack/babel-loader');
 const loadersCssPostcssSass = require('./webpack/loaders-css-postcss-sass');
 const fontsFileLoader = require('./webpack/fonts-file-loader');

@@ -1,5 +1,4 @@
 //$font-stack: -apple-system, BlinkMacSystemFont,Roboto,'Open Sans','Helvetica Neue',sans-serif;
-
 @import "../bootstrap/bootstrap";
 
 @font-face {
@@ -7,25 +6,38 @@
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/Roboto-Regular.ttf);
+}
 
-};
+;
 
 * {
   font-family: Roboto, sans-serif;
 }
 
-body{
+body {
   padding: 15px;
 }
-::placeholder{
-  color: cornflowerblue;
+
+input[type="search"]::placeholder {
+  color: #ffd595;
 }
 
-.table-user{
-  margin-top: 40px;
+.table-user {
+  margin-top: 20px;
+  counter-reset: rowNumber -1; /* Устанавливает значение счетчика, равным -1 th = 0*/
+  & tr {
+    counter-increment: rowNumber; /* Инкрементирует счетчик*/
 
-  &__caption_top{
+    & td:first-child:before {
+      content: counter(rowNumber) ")"; /* Отображает текущее значение счетчика */
+    }
+  }
+
+  &__caption_top {
     caption-side: top;
   }
+
 }
+
+
 
